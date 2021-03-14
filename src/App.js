@@ -26,7 +26,12 @@ function App() {
   return (
     <UserContext.Provider value={[LoggedInUser, setLoggedInUser]}>
      <Router>
-       <p>Email: {LoggedInUser.email}</p>
+     {
+        LoggedInUser && <div style={{margin:"0", display: "flex"}}>
+        <img style={{borderRadius: "50%", marginRight: "10px"}} src={LoggedInUser.photo}></img>
+        <h3>{LoggedInUser.name}</h3>
+        </div>
+      }
      <Header></Header>
     <Switch>
       <Route path="/shop">

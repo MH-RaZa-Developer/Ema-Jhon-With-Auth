@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Product.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const Product = (props) => {
   const products = props.product;
@@ -22,7 +24,7 @@ const Product = (props) => {
         <p>
           <small> only {stock} items Left in Our Stock --Order Soon</small>{" "}
         </p>
-{  props.showButton && <button onClick={()=>handleAddProduct(products)} className="pdBtn">Add To Cart</button>
+{  props.showButton && <button onClick={()=>handleAddProduct(products)} className="pdBtn">Add To Cart <FontAwesomeIcon icon={faShoppingCart} /></button>
 }      </div>
     </div>
   );

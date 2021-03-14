@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRemoveFormat } from '@fortawesome/free-solid-svg-icons'
 
 const ReviewItem = (props) => {
     const {name, quantity, key} = props.product;
@@ -14,7 +16,7 @@ const ReviewItem = (props) => {
             <h4 className="pdName"> {name} </h4>
             <p>Quantity: {quantity} </p>
             <br/>
-            <button onClick={()=>RemoveProduct(key)} className="pdBtn">Remove Item</button>
+            <button onClick={()=>RemoveProduct(key)} className="pdBtn">Remove Item <FontAwesomeIcon icon={faRemoveFormat} /></button>
         </div>
     );
 };
