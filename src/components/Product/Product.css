@@ -1,0 +1,28 @@
+.productHolder {
+  display: flex;
+  border-bottom: 1px solid gray;
+  margin-right: 5px;
+  padding: 10px;
+}
+.productDetails {
+  margin-left: 20px;
+}
+.pdBtn {
+  background-color: rgb(255, 183, 0);
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  width: 150px;
+  border: 2px solid rgb(255, 217, 0);
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+.pdBtn:hover {
+  background-color: rgb(255, 199, 56);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: 2px solid rgb(243, 236, 236);
+}
+.pdName {
+  color: blue;
+  font-weight: 400;
+}
